@@ -1,0 +1,22 @@
+[project]
+name = "fia-x402-token-safety"
+version = "0.1.0"
+description = "x402 USDC buyer-agent client for Base pre-swap token safety, rugpull, and A2A agent commerce checks."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["x402", "token-safety", "rugpull", "honeypot", "base", "base-chain", "usdc", "trading-agent", "pre-swap", "agent-commerce", "a2a"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.setuptools]
+py-modules = ["fia_x402_token_safety"]
+
+[tool.setuptools.package-dir]
+"" = "python"

@@ -1,0 +1,39 @@
+{
+  "name": "@fia-signals/x402-token-safety",
+  "version": "0.1.0",
+  "description": "x402 USDC buyer-agent client for Base pre-swap token safety, rugpull, and A2A agent commerce checks.",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "x402",
+    "token-safety",
+    "rugpull",
+    "honeypot",
+    "base",
+    "usdc",
+    "trading-agent",
+    "pre-swap",
+    "agent-commerce",
+    "a2a",
+    "base-chain"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
