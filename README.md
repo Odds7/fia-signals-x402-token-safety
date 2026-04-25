@@ -20,8 +20,10 @@ needs a machine-readable pre-swap verdict before touching a token.
 
 The live batch endpoint is indexed in CDP x402 Bazaar discovery. Buyer agents can
 find it through merchant lookup for pay-to
-`0x8D32c6a3EE3fB8a8b4c5378F7C5a26CC320a853F` or semantic searches such as
-`token safety base usdc` and `fia signals token safety`.
+`0x8D32c6a3EE3fB8a8b4c5378F7C5a26CC320a853F`.
+
+Current discovery proof is merchant-indexed. Broad semantic search ranking is
+still empirical and should not be treated as guaranteed placement.
 
 Pinned live x402 challenge constants:
 
