@@ -16,6 +16,13 @@ token safety endpoint:
 Use it when an autonomous trading agent, swap router, rebalancer, or market bot
 needs a machine-readable pre-swap verdict before touching a token.
 
+## Discovery
+
+The live batch endpoint is indexed in CDP x402 Bazaar discovery. Buyer agents can
+find it through merchant lookup for pay-to
+`0x8D32c6a3EE3fB8a8b4c5378F7C5a26CC320a853F` or semantic searches such as
+`token safety base usdc` and `fia signals token safety`.
+
 Pinned live x402 challenge constants:
 
 | Field | Value |
