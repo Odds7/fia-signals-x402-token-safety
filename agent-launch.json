@@ -1,0 +1,72 @@
+{
+  "name": "Fia Signals x402 Token Safety Batch",
+  "version": "0.1.0",
+  "status": "live",
+  "primary_use_case": "Screen up to 5 Base/EVM tokens before swap for rugpull, honeypot, liquidity, and market risk.",
+  "buyer_audience": [
+    "autonomous trading agents",
+    "swap routers",
+    "rebalancers",
+    "market-making bots",
+    "A2A agent commerce buyers"
+  ],
+  "live_endpoint": {
+    "method": "GET",
+    "url": "https://x402.fiasignals.com/token-safety/batch",
+    "query_example": "https://x402.fiasignals.com/token-safety/batch?chain=base&token_addresses=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913,0x4200000000000000000000000000000000000006",
+    "price_usdc": "0.10",
+    "amount_raw_usdc": "100000",
+    "network": "eip155:8453",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "pay_to": "0x8D32c6a3EE3fB8a8b4c5378F7C5a26CC320a853F",
+    "limit": 5
+  },
+  "fallback_endpoint": {
+    "method": "GET",
+    "url": "https://x402.fiasignals.com/token-safety",
+    "query_example": "https://x402.fiasignals.com/token-safety?chain=base&token_address=0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "price_usdc": "0.03",
+    "amount_raw_usdc": "30000"
+  },
+  "discovery": {
+    "github": "https://github.com/Odds7/fia-signals-x402-token-safety",
+    "github_release": "https://github.com/Odds7/fia-signals-x402-token-safety/releases/tag/v0.1.0",
+    "x402_manifest": "https://x402.fiasignals.com/.well-known/x402.json",
+    "cdp_bazaar_merchant_lookup": "https://api.cdp.coinbase.com/platform/v2/x402/discovery/merchant?payTo=0x8D32c6a3EE3fB8a8b4c5378F7C5a26CC320a853F",
+    "cdp_bazaar_status": "merchant-indexed; broad semantic ranking is empirical and not guaranteed"
+  },
+  "client_packages": {
+    "github_source": "live",
+    "npm": "pending registry auth",
+    "pypi": "pending registry auth"
+  },
+  "data_sources": {
+    "live": ["GoPlus", "DexScreener"],
+    "planned_stub_only": ["De.Fi", "Bubblemaps"]
+  },
+  "response_shape": {
+    "count": "number of checked tokens",
+    "limit": 5,
+    "chain": "base",
+    "summary": {"safe": 0, "risky": 0, "blocked": 0, "error": 0},
+    "results": "array of verdict, action, safety_score, confidence, reasons, warnings, sources, raw_checks"
+  },
+  "proof": {
+    "contract_regression": "green",
+    "paid_settlement": "proven",
+    "latest_metadata_refresh_tx": "0xa43cb13eb26ef34a8e6453a1c49847b22741e9990f7fde04336e27e9b590743c",
+    "latest_metadata_refresh_block": 45151515
+  },
+  "keywords": [
+    "x402",
+    "Base USDC",
+    "token safety",
+    "rugpull detection",
+    "honeypot detection",
+    "pre-swap risk",
+    "trading bot",
+    "buyer agent",
+    "A2A commerce",
+    "swap router"
+  ]
+}
