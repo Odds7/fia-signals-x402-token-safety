@@ -15,6 +15,11 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules"
 ]
 
+[project.urls]
+Homepage = "https://github.com/Odds7/fia-signals-x402-token-safety"
+Repository = "https://github.com/Odds7/fia-signals-x402-token-safety"
+Issues = "https://github.com/Odds7/fia-signals-x402-token-safety/issues"
+
 [tool.setuptools]
 py-modules = ["fia_x402_token_safety"]
 

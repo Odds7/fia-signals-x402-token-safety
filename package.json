@@ -5,6 +5,14 @@
   "type": "module",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Odds7/fia-signals-x402-token-safety.git"
+  },
+  "homepage": "https://github.com/Odds7/fia-signals-x402-token-safety#readme",
+  "bugs": {
+    "url": "https://github.com/Odds7/fia-signals-x402-token-safety/issues"
+  },
   "exports": {
     ".": {
       "types": "./dist/src/index.d.ts",
